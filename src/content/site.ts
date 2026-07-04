@@ -59,8 +59,8 @@ export const timeline: TimelineEvent[] = [
   },
   {
     year: "XV w.",
-    title: "Wieś Szorców",
-    body: "Wieś Szorców, później Cibarzewo-Szorce i Szorce, została założona już w początkach XV wieku.",
+    title: "Wieś Szorce",
+    body: "Wieś Szorce została założona już w początkach XV wieku.",
   },
   {
     year: "1421",
