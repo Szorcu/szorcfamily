@@ -1,6 +1,6 @@
 import { timeline, figures } from "@/content/site";
 
-export function FamilyHistorySection() {
+export const FamilyHistorySection = () => {
   return (
     <>
       <a id="rod" />

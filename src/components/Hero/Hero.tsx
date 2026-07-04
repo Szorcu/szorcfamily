@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { heroForms } from "@/content/site";
 
-export function Hero() {
+export const Hero = () => {
   const [typed, setTyped] = useState("Szorc");
   // Refs mirror the original component's `fi` / `dir` instance fields so the
   // recursive timer keeps its place across renders. `cur` tracks the currently

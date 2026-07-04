@@ -1,6 +1,6 @@
 import { wariantyPoboczne } from "@/content/site";
 
-export function SurnameSection() {
+export const SurnameSection = () => {
   return (
     <>
       <a id="nazwisko" />

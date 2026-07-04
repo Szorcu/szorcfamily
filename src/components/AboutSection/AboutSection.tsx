@@ -1,6 +1,6 @@
 import { pillars } from "@/content/site";
 
-export function AboutSection() {
+export const AboutSection = () => {
   return (
     <>
       <a id="oprojekcie" />

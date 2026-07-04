@@ -1,7 +1,7 @@
 import Image from "next/image";
 import herbMora from "@/assets/herb-mora-original.png";
 
-export function CoatOfArmsSection() {
+export const CoatOfArmsSection = () => {
   return (
     <>
       <a id="herb" />

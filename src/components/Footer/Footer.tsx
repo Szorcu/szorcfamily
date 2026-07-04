@@ -1,7 +1,7 @@
 import Image from "next/image";
 import herbMoraMono from "@/assets/herb-mora-mono.png";
 
-export function Footer() {
+export const Footer = () => {
   return (
     <footer className="border-t border-white/10 bg-ink">
       <div className="mx-auto flex max-w-[1120px] flex-wrap items-center justify-between gap-5 p-8">

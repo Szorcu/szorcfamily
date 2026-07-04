@@ -60,3 +60,21 @@ For multi-step tasks, state a brief plan:
 ```
 
 Strong success criteria let you loop independently. Weak criteria ("make it work") require constant clarification.
+
+## 5. Component File Structure
+
+**One folder per component. `export const`, never `export default` unless a tool requires it.**
+
+Each component lives in its own folder under `src/components/`:
+
+```
+ComponentName/
+  ComponentName.tsx      → export const ComponentName
+  ComponentName.types.ts → export type ComponentNameProps  (only if the component has props)
+  index.ts               → export * from "./ComponentName"
+```
+
+- The `.tsx` file exports the component as `export const ComponentName = (...) => { ... }`.
+- Add `ComponentName.types.ts` only when the component takes props. Don't create empty types files for propless components.
+- `index.ts` re-exports the component so imports stay `@/components/ComponentName`.
+- Use `export const`, never `export default` — unless a framework/tool forces a default export (e.g. Next.js `page.tsx`/`layout.tsx`).

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-export function PromoStrip() {
+export const PromoStrip = () => {
   const [open, setOpen] = useState(true);
   if (!open) return null;
 
