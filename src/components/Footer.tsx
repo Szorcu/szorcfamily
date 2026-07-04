@@ -1,11 +1,12 @@
+import Image from "next/image";
+import herbMoraMono from "@/assets/herb-mora-mono.png";
+
 export function Footer() {
   return (
     <footer className="border-t border-white/10 bg-ink">
       <div className="mx-auto flex max-w-[1120px] flex-wrap items-center justify-between gap-5 p-8">
         <a href="#top" className="flex items-center gap-3 no-underline">
-          <span className="flex h-[34px] w-[34px] items-center justify-center border-[1.5px] border-[#8a7d6a] font-display text-xl font-semibold text-[#8a7d6a]">
-            S
-          </span>
+          <Image src={herbMoraMono} alt="Szorc" className="h-[34px] w-auto" />
           <span className="font-mono text-xs tracking-[0.24em] text-[#8a7d6a]">
             SZORC.PL
           </span>

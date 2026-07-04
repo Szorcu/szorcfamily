@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, EB_Garamond, IBM_Plex_Mono } from "next/font/google";
+import {
+  Cormorant_Garamond,
+  EB_Garamond,
+  IBM_Plex_Mono,
+} from "next/font/google";
 import "./globals.css";
 import { GrainOverlay } from "@/components/GrainOverlay";
 
@@ -25,11 +29,11 @@ const plexMono = IBM_Plex_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://szorc.pl"),
-  title: "Szorc — Archiwum rodzinne",
+  title: "Szorc.pl | Archiwum rodzinne",
   description:
     "Żywe archiwum rodziny Szorc — interaktywna kronika i kompendium wiedzy o naszych korzeniach, gałęziach i ludziach.",
   openGraph: {
-    title: "Szorc — Archiwum rodzinne",
+    title: "Szorc.pl | Archiwum rodzinne",
     description: "Historia jednego nazwiska, spisywana wspólnie.",
     url: "https://szorc.pl",
     siteName: "szorc.pl",
