@@ -1,11 +1,4 @@
-"use client";
-
-import { useState } from "react";
-
 export const PromoStrip = () => {
-  const [open, setOpen] = useState(true);
-  if (!open) return null;
-
   return (
     <div className="bg-accent text-paper sticky top-[63px] z-[29]">
       <div className="relative mx-auto flex max-w-[1120px] flex-wrap items-center justify-center gap-[18px] px-8 py-[11px]">
@@ -21,13 +14,6 @@ export const PromoStrip = () => {
         >
           Napisz do nas
         </a>
-        <button
-          onClick={() => setOpen(false)}
-          aria-label="Zamknij"
-          className="text-paper absolute right-6 cursor-pointer border-none bg-transparent p-1 font-mono text-lg leading-none opacity-70 transition-opacity hover:opacity-100"
-        >
-          ×
-        </button>
       </div>
     </div>
   );

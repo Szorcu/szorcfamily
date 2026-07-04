@@ -71,10 +71,20 @@ Each component lives in its own folder under `src/components/`:
 ComponentName/
   ComponentName.tsx      → export const ComponentName
   ComponentName.types.ts → export type ComponentNameProps  (only if the component has props)
+  ComponentName.consts.ts → module-level constants (only if the component has any)
+  ComponentName.utils.ts  → module-level helper functions (only if the component has any)
   index.ts               → export * from "./ComponentName"
 ```
 
 - The `.tsx` file exports the component as `export const ComponentName = (...) => { ... }`.
 - Add `ComponentName.types.ts` only when the component takes props. Don't create empty types files for propless components.
+- Don't declare `const` values or helper functions at module scope inside the `.tsx`. Move constants to `ComponentName.consts.ts` and helper functions to `ComponentName.utils.ts`, and import them. Only create these files when there's something to put in them.
 - `index.ts` re-exports the component so imports stay `@/components/ComponentName`.
 - Use `export const`, never `export default` — unless a framework/tool forces a default export (e.g. Next.js `page.tsx`/`layout.tsx`).
+
+## 6. Boolean Naming
+
+**Booleans read as yes/no questions. Prefix with `is`, `has`, `should`, `can`.**
+
+- Name boolean variables, state, and props `isDismissed`, `hasError`, `shouldRender`, `canSubmit` — never bare adjectives/participles like `dismissed`, `error`, `open`.
+- Applies to `useState` flags, derived booleans, and component props alike.
