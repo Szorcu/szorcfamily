@@ -4,7 +4,7 @@ import Image from "next/image";
 export const Footer = () => {
   return (
     <footer className="bg-ink border-t border-white/10">
-      <div className="mx-auto flex max-w-[1120px] flex-wrap items-center justify-between gap-5 p-8">
+      <div className="mx-auto flex max-w-[1120px] flex-col items-center gap-5 p-8 text-center md:flex-row md:justify-between md:text-left">
         <a href="#top" className="flex items-center gap-3 no-underline">
           <Image src={herbMoraMono} alt="Szorc" className="h-[34px] w-auto" />
           <span className="font-mono text-xs tracking-[0.24em] text-[#8a7d6a]">
