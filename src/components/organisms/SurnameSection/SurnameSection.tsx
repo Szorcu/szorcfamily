@@ -22,15 +22,15 @@ export const SurnameSection = () => {
         <div className="text-accent mt-14 mb-5 font-mono text-xs tracking-[0.16em] uppercase">
           Warianty zapisu
         </div>
-        <div className="flex flex-wrap items-center justify-center gap-5">
+        <div className="flex flex-col items-center gap-6 md:flex-row md:flex-wrap md:justify-center md:gap-5">
           <div className="bg-accent font-display text-paper px-10 py-6 text-[44px] leading-none font-semibold">
             Szorc
           </div>
           <div className="text-ink-soft flex items-center gap-[14px] font-mono text-xs tracking-[0.16em] uppercase">
-            <span className="bg-line h-px w-[26px]" />
+            <span className="bg-line hidden h-px w-[26px] md:block" />
             także
           </div>
-          <div className="flex flex-wrap gap-[14px]">
+          <div className="flex flex-wrap justify-center gap-[14px]">
             {wariantyPoboczne.map((w) => (
               <div
                 key={w.form}
