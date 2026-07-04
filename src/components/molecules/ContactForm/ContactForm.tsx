@@ -75,8 +75,8 @@ export const ContactForm = () => {
         <textarea
           name="message"
           rows={4}
-          placeholder="Napisz, co wiesz o swojej gałęzi rodziny…"
-          className="border-line font-body text-ink focus:border-accent w-full resize-y border-0 border-b-[1.5px] border-solid bg-transparent py-[6px] text-lg leading-[1.5] outline-none"
+          placeholder="Napisz kilka słów o sobie i co Cię do nas sprowadza…"
+          className="border-line font-body text-ink focus:border-accent min-h-28 w-full resize-y border-0 border-b-[1.5px] border-solid bg-transparent py-[6px] text-lg leading-[1.5] outline-none"
         />
       </label>
       <div className="mt-[30px] flex items-center justify-end">
