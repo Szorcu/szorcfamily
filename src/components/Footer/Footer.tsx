@@ -1,9 +1,9 @@
-import Image from "next/image";
 import herbMoraMono from "@/assets/herb-mora-mono.png";
+import Image from "next/image";
 
 export const Footer = () => {
   return (
-    <footer className="border-t border-white/10 bg-ink">
+    <footer className="bg-ink border-t border-white/10">
       <div className="mx-auto flex max-w-[1120px] flex-wrap items-center justify-between gap-5 p-8">
         <a href="#top" className="flex items-center gap-3 no-underline">
           <Image src={herbMoraMono} alt="Szorc" className="h-[34px] w-auto" />
@@ -28,4 +28,4 @@ export const Footer = () => {
       </div>
     </footer>
   );
-}
+};

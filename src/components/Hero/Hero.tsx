@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
 import { heroForms } from "@/content/site";
+import { useEffect, useRef, useState } from "react";
 
 export const Hero = () => {
   const [typed, setTyped] = useState("Szorc");
@@ -48,33 +48,35 @@ export const Hero = () => {
   }, []);
 
   return (
-    <section id="top" className="mx-auto max-w-[1120px] px-8 pb-24 pt-[120px] text-center [animation:szUp_0.7s_ease_both]">
-        <div className="font-mono text-xs uppercase tracking-[0.34em] text-accent">
-          Archiwum rodzinne · Od 2026
-        </div>
-        <h1 className="mt-[26px] font-display text-[clamp(84px,17vw,220px)] font-semibold leading-[0.9] tracking-[-0.01em] text-ink">
-          {typed}
-          <span className="ml-[0.06em] inline-block h-[0.78em] w-[0.055em] translate-y-0 bg-accent-2 align-baseline [animation:szBlink_1.05s_steps(1)_infinite]" />
-        </h1>
-        <div className="my-[30px] flex items-center justify-center gap-4">
-          <span className="h-px w-[70px] bg-line" />
-          <span className="h-[7px] w-[7px] rotate-45 bg-accent-2" />
-          <span className="h-px w-[70px] bg-line" />
-        </div>
-        <p className="mx-auto max-w-[720px] font-display text-[clamp(24px,3.4vw,34px)] font-medium italic leading-[1.3] text-ink">
-          Historia jednego nazwiska, spisywana wspólnie.
-        </p>
-        <p className="mx-auto mt-[22px] max-w-[620px] font-body text-[19px] leading-[1.65] text-ink-soft">
-          Powoli, cierpliwie budujemy żywe archiwum rodziny Szorc —
-          interaktywną kronikę i kompendium wiedzy o naszych korzeniach,
-          gałęziach i ludziach.
-        </p>
-        <a
-          href="#kontakt"
-          className="mt-10 inline-flex items-center gap-3 border border-accent bg-accent px-[30px] py-[15px] font-mono text-[13px] uppercase tracking-[0.14em] text-paper no-underline transition-colors hover:border-ink hover:bg-ink"
-        >
-          Podziel się swoją historią
-        </a>
-      </section>
+    <section
+      id="top"
+      className="mx-auto max-w-[1120px] [animation:szUp_0.7s_ease_both] px-8 pt-[120px] pb-24 text-center"
+    >
+      <div className="text-accent font-mono text-xs tracking-[0.34em] uppercase">
+        Archiwum rodzinne · Od 2026
+      </div>
+      <h1 className="font-display text-ink mt-[26px] text-[clamp(84px,17vw,220px)] leading-[0.9] font-semibold tracking-[-0.01em]">
+        {typed}
+        <span className="bg-accent-2 ml-[0.06em] inline-block h-[0.78em] w-[0.055em] translate-y-0 [animation:szBlink_1.05s_steps(1)_infinite] align-baseline" />
+      </h1>
+      <div className="my-[30px] flex items-center justify-center gap-4">
+        <span className="bg-line h-px w-[70px]" />
+        <span className="bg-accent-2 h-[7px] w-[7px] rotate-45" />
+        <span className="bg-line h-px w-[70px]" />
+      </div>
+      <p className="font-display text-ink mx-auto max-w-[720px] text-[clamp(24px,3.4vw,34px)] leading-[1.3] font-medium italic">
+        Historia jednego nazwiska, spisywana wspólnie.
+      </p>
+      <p className="font-body text-ink-soft mx-auto mt-[22px] max-w-[620px] text-[19px] leading-[1.65]">
+        Powoli, cierpliwie budujemy żywe archiwum rodziny Szorc — interaktywną
+        kronikę i kompendium wiedzy o naszych korzeniach, gałęziach i ludziach.
+      </p>
+      <a
+        href="#kontakt"
+        className="border-accent bg-accent text-paper hover:border-ink hover:bg-ink mt-10 inline-flex items-center gap-3 border px-[30px] py-[15px] font-mono text-[13px] tracking-[0.14em] uppercase no-underline transition-colors"
+      >
+        Podziel się swoją historią
+      </a>
+    </section>
   );
-}
+};

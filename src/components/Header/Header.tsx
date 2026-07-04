@@ -1,10 +1,10 @@
-import Image from "next/image";
-import { nav } from "@/content/site";
 import herbMoraMono from "@/assets/herb-mora-mono.png";
+import { nav } from "@/content/site";
+import Image from "next/image";
 
 export const Header = () => {
   return (
-    <header className="sticky top-0 z-30 border-b border-line bg-paper/85 backdrop-blur-[10px]">
+    <header className="border-line bg-paper/85 sticky top-0 z-30 border-b backdrop-blur-[10px]">
       <div className="mx-auto flex max-w-[1120px] items-center justify-between gap-6 px-8 py-[14px]">
         <a href="#top" className="flex items-center gap-3 no-underline">
           <Image
@@ -13,7 +13,7 @@ export const Header = () => {
             className="h-[34px] w-auto"
             priority
           />
-          <span className="font-mono text-xs tracking-[0.24em] text-ink">
+          <span className="text-ink font-mono text-xs tracking-[0.24em]">
             SZORC.PL
           </span>
         </a>
@@ -22,7 +22,7 @@ export const Header = () => {
             <a
               key={item.href}
               href={item.href}
-              className={`font-mono text-xs uppercase tracking-[0.12em] no-underline transition-colors hover:text-accent ${
+              className={`hover:text-accent font-mono text-xs tracking-[0.12em] uppercase no-underline transition-colors ${
                 item.accent ? "text-accent" : "text-ink-soft"
               }`}
             >
@@ -33,4 +33,4 @@ export const Header = () => {
       </div>
     </header>
   );
-}
+};

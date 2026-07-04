@@ -7,28 +7,28 @@ export const PromoStrip = () => {
   if (!open) return null;
 
   return (
-    <div className="sticky top-[63px] z-[29] bg-accent text-paper">
+    <div className="bg-accent text-paper sticky top-[63px] z-[29]">
       <div className="relative mx-auto flex max-w-[1120px] flex-wrap items-center justify-center gap-[18px] px-8 py-[11px]">
-        <span className="h-[6px] w-[6px] shrink-0 rotate-45 bg-accent-2" />
-        <p className="m-0 text-center font-body text-base leading-[1.4]">
+        <span className="bg-accent-2 h-[6px] w-[6px] shrink-0 rotate-45" />
+        <p className="font-body m-0 text-center text-base leading-[1.4]">
           Mamy rodzinne adresy w domenie{" "}
           <span className="font-mono text-[13px]">imie@szorc.pl</span>. Chcesz
           mieć własny?
         </p>
         <a
           href="#kontakt"
-          className="shrink-0 whitespace-nowrap border border-white/50 px-4 py-[7px] font-mono text-[11px] uppercase tracking-[0.12em] text-paper no-underline transition-colors hover:border-paper hover:bg-paper hover:text-accent"
+          className="text-paper hover:border-paper hover:bg-paper hover:text-accent shrink-0 border border-white/50 px-4 py-[7px] font-mono text-[11px] tracking-[0.12em] whitespace-nowrap uppercase no-underline transition-colors"
         >
           Napisz do nas
         </a>
         <button
           onClick={() => setOpen(false)}
           aria-label="Zamknij"
-          className="absolute right-6 cursor-pointer border-none bg-transparent p-1 font-mono text-lg leading-none text-paper opacity-70 transition-opacity hover:opacity-100"
+          className="text-paper absolute right-6 cursor-pointer border-none bg-transparent p-1 font-mono text-lg leading-none opacity-70 transition-opacity hover:opacity-100"
         >
           ×
         </button>
       </div>
     </div>
   );
-}
+};

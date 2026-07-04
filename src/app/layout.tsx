@@ -4,6 +4,7 @@ import {
   EB_Garamond,
   IBM_Plex_Mono,
 } from "next/font/google";
+import { Toaster } from "sonner";
 import "./globals.css";
 import { GrainOverlay } from "@/components/GrainOverlay";
 
@@ -55,6 +56,7 @@ export default function RootLayout({
       <body>
         <GrainOverlay />
         {children}
+        <Toaster />
       </body>
     </html>
   );

@@ -3,7 +3,13 @@
     "allow": [
       "Bash(pnpm --version)",
       "Bash(pnpm build *)",
-      "Bash(pnpm lint *)"
+      "Bash(pnpm quality:eslint-check)",
+      "Bash(pnpm quality:ts-check)",
+      "Bash(pnpm quality:prettier-fix)",
+      "Bash(pnpm quality:prettier-check)"
     ]
+  },
+  "enabledPlugins": {
+    "context7@context7-marketplace": true
   }
 }
