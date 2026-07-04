@@ -12,7 +12,7 @@ export const Footer = () => {
           </span>
         </a>
         <span className="font-mono text-[11px] tracking-[0.1em] text-[#8a7d6a]">
-          szorc.pl · Archiwum rodziny Szorc · 2026
+          Archiwum rodziny Szorc · 2026
         </span>
         <span className="font-mono text-[11px] tracking-[0.1em] text-[#8a7d6a]">
           Stworzona przez{" "}

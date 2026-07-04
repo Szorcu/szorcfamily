@@ -6,7 +6,7 @@ export const CoatOfArmsSection = () => {
     <section id="herb" className="border-line bg-paper border-t">
       <div className="mx-auto max-w-[1120px] px-8 py-[100px]">
         <div className="mt-8 grid grid-cols-1 items-center gap-16 md:grid-cols-[0.9fr_1.1fr] md:items-stretch">
-          <div className="flex items-center justify-center overflow-hidden p-2">
+          <div className="order-last flex items-center justify-center overflow-hidden p-2 md:order-0">
             <Image
               src={herbMora}
               alt="Herb Mora"
