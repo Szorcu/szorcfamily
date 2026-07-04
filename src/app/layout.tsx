@@ -6,7 +6,6 @@ import {
 } from "next/font/google";
 import { Toaster } from "sonner";
 import "./globals.css";
-import { GrainOverlay } from "@/components/GrainOverlay";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -54,7 +53,6 @@ export default function RootLayout({
       className={`${cormorant.variable} ${ebGaramond.variable} ${plexMono.variable} antialiased`}
     >
       <body>
-        <GrainOverlay />
         {children}
         <Toaster />
       </body>
