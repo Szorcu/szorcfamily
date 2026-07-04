@@ -2,10 +2,10 @@ import herbMoraMono from "@/assets/herb-mora-mono.png";
 import { nav } from "@/content/site";
 import Image from "next/image";
 
-export const Header = () => {
+export const Navbar = () => {
   return (
     <header className="border-line bg-paper/85 sticky top-0 z-30 border-b backdrop-blur-[10px]">
-      <div className="mx-auto flex max-w-[1120px] items-center justify-between gap-6 px-8 py-[14px]">
+      <div className="mx-auto flex max-w-[1120px] items-center justify-center gap-6 px-8 py-[14px] md:justify-between">
         <a href="#top" className="flex items-center gap-3 no-underline">
           <Image
             src={herbMoraMono}
@@ -17,7 +17,7 @@ export const Header = () => {
             SZORC.PL
           </span>
         </a>
-        <nav className="hidden gap-[26px] sm:flex">
+        <nav className="hidden gap-[26px] md:flex">
           {nav.map((item) => (
             <a
               key={item.href}
