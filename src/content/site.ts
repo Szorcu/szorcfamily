@@ -15,7 +15,7 @@ export const nav: NavItem[] = [
 ];
 
 /** Surname spellings cycled by the hero typewriter animation. */
-export const heroForms = ["Szorc", "Szorcz", "Szczorc", "Schortz"];
+export const heroForms = ["Szorc", "Schortz", "Szorcz", "Szczorc"];
 
 export type Pillar = { n: string; t: string; d: string };
 

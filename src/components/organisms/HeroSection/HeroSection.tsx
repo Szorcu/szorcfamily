@@ -4,15 +4,10 @@ import { heroForms } from "@/content/site";
 import { useEffect, useRef, useState } from "react";
 
 export const HeroSection = () => {
-  const [typed, setTyped] = useState("Szorc");
-  // Refs mirror the original component's `fi` / `dir` instance fields so the
-  // recursive timer keeps its place across renders. `cur` tracks the currently
-  // rendered string outside of React state so the timer callback stays pure —
-  // scheduling timers inside a `setState` updater breaks under StrictMode's
-  // double-invocation and spawns parallel loops.
+  const [typed, setTyped] = useState("");
   const fi = useRef(0);
   const dir = useRef(1);
-  const cur = useRef("Szorc");
+  const cur = useRef("");
 
   useEffect(() => {
     let timer: ReturnType<typeof setTimeout>;
@@ -43,7 +38,8 @@ export const HeroSection = () => {
       timer = setTimeout(step, 320);
     };
 
-    timer = setTimeout(step, 1600);
+    timer = setTimeout(step, 250);
+
     return () => clearTimeout(timer);
   }, []);
 
