@@ -48,9 +48,7 @@ export const Hero = () => {
   }, []);
 
   return (
-    <>
-      <a id="top" />
-      <section className="mx-auto max-w-[1120px] px-8 pb-24 pt-[120px] text-center [animation:szUp_0.7s_ease_both]">
+    <section id="top" className="mx-auto max-w-[1120px] px-8 pb-24 pt-[120px] text-center [animation:szUp_0.7s_ease_both]">
         <div className="font-mono text-xs uppercase tracking-[0.34em] text-accent">
           Archiwum rodzinne · Od 2026
         </div>
@@ -78,6 +76,5 @@ export const Hero = () => {
           Podziel się swoją historią
         </a>
       </section>
-    </>
   );
 }

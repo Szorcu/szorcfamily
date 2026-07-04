@@ -2,9 +2,7 @@ import { wariantyPoboczne } from "@/content/site";
 
 export const SurnameSection = () => {
   return (
-    <>
-      <a id="nazwisko" />
-      <section className="border-t border-line bg-paper-2">
+    <section id="nazwisko" className="border-t border-line bg-paper-2">
         <div className="mx-auto max-w-[1120px] px-8 py-[100px] text-center">
           <div className="font-mono text-xs uppercase tracking-[0.2em] text-accent">
             02 — Pochodzenie nazwiska
@@ -45,6 +43,5 @@ export const SurnameSection = () => {
           </div>
         </div>
       </section>
-    </>
   );
 }

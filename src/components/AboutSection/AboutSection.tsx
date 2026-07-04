@@ -2,9 +2,7 @@ import { pillars } from "@/content/site";
 
 export const AboutSection = () => {
   return (
-    <>
-      <a id="oprojekcie" />
-      <section className="border-t border-line">
+    <section id="oprojekcie" className="border-t border-line">
         <div className="mx-auto max-w-[1120px] px-8 py-[100px]">
           <div className="font-mono text-xs uppercase tracking-[0.2em] text-accent">
             01 — O projekcie
@@ -37,6 +35,5 @@ export const AboutSection = () => {
           </div>
         </div>
       </section>
-    </>
   );
 }

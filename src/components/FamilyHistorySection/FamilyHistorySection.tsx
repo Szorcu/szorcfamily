@@ -2,9 +2,7 @@ import { timeline, figures } from "@/content/site";
 
 export const FamilyHistorySection = () => {
   return (
-    <>
-      <a id="rod" />
-      <section className="border-t border-line bg-paper">
+    <section id="rod" className="border-t border-line bg-paper">
         <div className="mx-auto max-w-[1120px] px-8 py-[100px]">
           <div className="font-mono text-xs uppercase tracking-[0.2em] text-accent">
             03 — Historia rodu
@@ -89,6 +87,5 @@ export const FamilyHistorySection = () => {
           </div>
         </div>
       </section>
-    </>
   );
 }
