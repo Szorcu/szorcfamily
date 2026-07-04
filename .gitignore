@@ -1,0 +1,29 @@
+# Package manager and dependencies
+/node_modules
+
+# Testing
+/coverage
+
+# Next.js
+/.next/
+/out/
+
+# Build output
+/build
+
+# Debug
+.pnpm-debug.log*
+
+# Environment
+.env*
+
+# Vercel
+.vercel
+
+# Typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# Misc
+.DS_Store
+*.pem

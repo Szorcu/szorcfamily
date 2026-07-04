@@ -1,0 +1,16 @@
+{
+  "workbench.colorCustomizations": {
+    "tree.indentGuidesStroke": "#cccccc",
+    "activityBar.background": "#6b4a2b",
+    "titleBar.activeBackground": "#6b4a2b",
+    "titleBar.activeForeground": "#f4f1ea",
+    "titleBar.inactiveBackground": "#6b4a2b",
+    "titleBar.inactiveForeground": "#f9fbea",
+    "statusBar.background": "#241c13",
+    "statusBar.foreground": "#f9fbea",
+    "statusBar.debuggingBackground": "#6b4a2b",
+    "statusBar.debuggingForeground": "#f9fbea",
+    "statusBar.noFolderBackground": "#6b4a2b",
+    "statusBar.noFolderForeground": "#f9fbea"
+  }
+}

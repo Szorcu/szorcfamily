@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+/*
+  Theme ported from the original Claude Design source (Szorc.dc.html).
+  The palette/heading/texture knobs were design-time editor controls;
+  we hardcode the "Sepia" default here. Changing these vars re-themes the
+  whole site in one place.
+*/
+:root {
+  --paper: #f4f1ea;
+  --paper-2: #efe8da;
+  --card: #faf7f0;
+  --ink: #241c13;
+  --ink-soft: #6d6051;
+  --line: #ddd1bd;
+  --accent: #6b4a2b;
+  --accent-2: #a98b66;
+}
+
+/* Expose theme tokens + fonts to Tailwind utilities (v4 @theme). */
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-2: var(--paper-2);
+  --color-card: var(--card);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-2: var(--accent-2);
+
+  --font-display: var(--font-cormorant), Georgia, serif;
+  --font-body: var(--font-eb-garamond), Georgia, serif;
+  --font-mono: var(--font-plex-mono), monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-eb-garamond), Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--paper);
+}
+
+@keyframes szUp {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes szBlink {
+  0%,
+  45% {
+    opacity: 1;
+  }
+  55%,
+  100% {
+    opacity: 0;
+  }
+}
