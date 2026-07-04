@@ -12,8 +12,11 @@ export const ContactSection = () => {
             Skontaktuj się z nami
           </h2>
           <p className="font-body mt-[22px] max-w-[400px] text-[19px] leading-[1.6] text-[#c9bda9]">
-            Chcesz pomóc w budowaniu tego archiwum, podzielić się historią albo
-            po prostu się spotkać? Napisz do nas.
+            Nosisz nazwisko Szorc, masz je w rodzinie albo po prostu trafiłeś tu
+            z ciekawości — odezwij się. Chętnie poznamy Twoją historię,
+            wspomnienia i miejsca, z którymi związana jest Twoja gałąź rodziny.
+            Każdy kontakt może być początkiem nowej rozmowy i kolejnym kawałkiem
+            wspólnej historii.
           </p>
           <div className="text-accent-2 mt-8 font-mono text-[13px] tracking-[0.08em]">
             kontakt@szorc.pl

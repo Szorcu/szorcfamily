@@ -15,8 +15,6 @@ export const ContactForm = () => {
     const formData = new FormData(form);
 
     formData.append("access_key", "caaa416d-c5e3-4ffa-a34a-5f9f3c8c0895");
-    formData.append("from_name", "szorc.pl");
-    formData.append("subject", "Nowa wiadomość z formularza kontaktowego");
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -25,20 +23,20 @@ export const ContactForm = () => {
       }).then((response) => response.json());
 
       if (response.success) {
-        toast("Wiadomość wysłana! 💪", {
+        toast("Dziękujemy za wiadomość 🙌", {
           description:
-            "Dziękujemy za kontakt. Odezwiemy się tak szybko, jak to możliwe.",
+            "Cieszymy się, że do nas piszesz. Odezwiemy się niedługo!",
         });
 
         form.reset();
       } else {
-        toast("Błąd formularza!", {
-          description: "Coś poszło nie tak. Spróbuj ponownie później.",
+        toast("Nie udało się wysłać wiadomości", {
+          description: "Coś poszło nie tak. Spróbuj ponownie za chwilę.",
         });
       }
     } catch {
-      toast("Błąd formularza!", {
-        description: "Coś poszło nie tak. Spróbuj ponownie później.",
+      toast("Nie udało się wysłać wiadomości", {
+        description: "Coś poszło nie tak. Spróbuj ponownie za chwilę.",
       });
     } finally {
       setIsLoading(false);
@@ -53,7 +51,7 @@ export const ContactForm = () => {
             Imię i nazwisko
           </span>
           <input
-            name="name"
+            name="fullname"
             placeholder="Jan Szorc"
             className="border-line font-body text-ink focus:border-accent w-full border-0 border-b-[1.5px] border-solid bg-transparent py-[6px] text-lg outline-none"
           />
@@ -81,18 +79,18 @@ export const ContactForm = () => {
           className="border-line font-body text-ink focus:border-accent w-full resize-y border-0 border-b-[1.5px] border-solid bg-transparent py-[6px] text-lg leading-[1.5] outline-none"
         />
       </label>
-      <div className="mt-[30px] flex items-center justify-end gap-5">
+      <div className="mt-[30px] flex items-center justify-end">
         <button
           type="submit"
           disabled={isLoading}
           className="border-accent bg-accent text-paper hover:border-ink hover:bg-ink inline-flex cursor-pointer items-center gap-2 border px-8 py-[15px] font-mono text-[13px] tracking-[0.14em] whitespace-nowrap uppercase transition-colors disabled:cursor-not-allowed disabled:opacity-60"
         >
+          Wyślij
           {isLoading ? (
             <Loader2 className="size-4 animate-spin" />
           ) : (
             <Send className="size-4" />
           )}
-          Wyślij
         </button>
       </div>
     </form>
