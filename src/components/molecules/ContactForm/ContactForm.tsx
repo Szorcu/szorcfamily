@@ -14,7 +14,7 @@ export const ContactForm = () => {
     const form = event.currentTarget;
     const formData = new FormData(form);
 
-    formData.append("access_key", "x");
+    formData.append("access_key", "caaa416d-c5e3-4ffa-a34a-5f9f3c8c0895");
     formData.append("from_name", "szorc.pl");
     formData.append("subject", "Nowa wiadomość z formularza kontaktowego");
 

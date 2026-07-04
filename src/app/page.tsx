@@ -1,19 +1,19 @@
-import { AboutSection } from "@/components/AboutSection";
-import { CoatOfArmsSection } from "@/components/CoatOfArmsSection";
-import { ContactSection } from "@/components/ContactSection";
-import { FamilyHistorySection } from "@/components/FamilyHistorySection";
-import { Footer } from "@/components/Footer";
-import { Header } from "@/components/Header";
-import { Hero } from "@/components/Hero";
-import { PromoStrip } from "@/components/PromoStrip";
-import { SurnameSection } from "@/components/SurnameSection";
+import { PromoStrip } from "@/components/molecules/PromoStrip";
+import { AboutSection } from "@/components/organisms/AboutSection";
+import { CoatOfArmsSection } from "@/components/organisms/CoatOfArmsSection";
+import { ContactSection } from "@/components/organisms/ContactSection";
+import { FamilyHistorySection } from "@/components/organisms/FamilyHistorySection";
+import { Footer } from "@/components/organisms/Footer";
+import { Header } from "@/components/organisms/Header";
+import { HeroSection } from "@/components/organisms/HeroSection";
+import { SurnameSection } from "@/components/organisms/SurnameSection";
 
 export default function Home() {
   return (
     <div className="relative min-h-screen overflow-hidden">
       <Header />
       <PromoStrip />
-      <Hero />
+      <HeroSection />
       <AboutSection />
       <SurnameSection />
       <FamilyHistorySection />
